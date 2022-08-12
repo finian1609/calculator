@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+}
+
+#container{
+    width: 15%;
+    margin: 5% auto;
+    border:.2em solid palevioletred;
+    height:100%;
+    position: relative;
+    top:2em;
+}
+
+#result{
+    height:15vh;
+    background-color: bisque;
+    border: .1em solid black;
+}
+
+#keyboard{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: .2em;
+    background-color: whitesmoke;
+    padding: 1em;
+} 
+
+button[class = 'operator'],button[class = 'number']{
+    padding: 15%;
+}
+
+.operator, .number{
+    width:15%;
+    margin: .2em;
+}
+
+button:nth-child(2){
+    padding: .3em;
+}
+
+#history{
+    color: black;
+    background-color: aliceblue;
+}
+#result{
+    text-align: right;
+    background-color: antiquewhite;
+}
